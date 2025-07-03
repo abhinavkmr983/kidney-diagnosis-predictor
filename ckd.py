@@ -5,9 +5,10 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 
-# Load trained model and scaler from .joblib files
-model = joblib.load("models/kidney_ckd_model.joblib")
-scaler = joblib.load("models/kidney_ckd_scaler.joblib")
+# Load trained model and scaler from .joblib files in root directory
+model = joblib.load("kidney_ckd_model.joblib")
+scaler = joblib.load("kidney_ckd_scaler.joblib")
+
 
 # ---------------------------
 # Streamlit UI Configuration
